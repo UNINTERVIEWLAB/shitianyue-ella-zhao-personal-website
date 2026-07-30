@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="根据联合国及其他国际组织职位描述生成有依据的面试练习题。">
+  <title>UN Interview Lab｜闪击 UN 求职实验室</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top"><span class="brand-mark">UN</span><span><b>INTERVIEW LAB</b><small>闪击 UN 求职实验室</small></span></a>
+    <div class="status"><i></i>JD-grounded · Evidence-led</div>
+  </header>
+  <main>
+    <section class="hero" id="top">
+      <div class="eyebrow">JD-GROUNDED INTERVIEW PREP</div>
+      <h1>把岗位要求，转化为<br><em>真正值得练的面试问题。</em></h1>
+      <p>输入联合国或其他国际组织的职位描述，系统识别岗位方向、价值观与行为，并生成可追溯到 JD 原文的练习题。</p>
+      <div class="hero-meta"><span><b>9</b> UN岗位网络</span><span><b>4+5</b> 价值观与行为</span><span><b>JD</b> 原文依据</span></div>
+    </section>
+    <section class="workspace">
+      <form class="control-panel" id="jd-form">
+        <div class="panel-header"><span>01</span><div><b>输入目标岗位</b><small>JOB DESCRIPTION</small></div></div>
+        <label class="field"><span>JD 链接 <small>用于保存来源</small></span><input id="jd-url" type="url" placeholder="https://careers.un.org/..."></label>
+        <p class="link-help">受招聘网站访问限制，纯前端页面无法稳定代读链接。请将 JD 正文粘贴到下方，链接可留作来源记录。</p>
+        <label class="field"><span>粘贴 JD 正文 <small id="char-count">0 字符</small></span><textarea id="jd-text" placeholder="建议粘贴 Responsibilities、Competencies、Education 和 Work Experience 部分。"></textarea></label>
+        <p class="notice" id="notice" hidden></p>
+        <label class="field"><span>练习题数 <b><output id="count-output">5</output> 题</b></span><input id="question-count" type="range" min="3" max="8" value="5"><span class="range-labels"><small>快速热身</small><small>完整模拟</small></span></label>
+        <button class="generate" type="submit"><span>分析 JD 并生成题单</span><b>→</b></button>
+        <p class="privacy">建议粘贴完整的岗位职责与任职要求，以获得更有针对性的练习题。</p>
+      </form>
+      <section class="results empty" id="results" aria-live="polite">
+        <div class="empty-state"><span>02</span><h2>等待一份具体的 JD</h2><p>无需先猜岗位族或勾选能力。系统将从职位描述中提取线索，再展示判断依据。</p><div class="source-card"><b>分析输出</b><span>官方 Job Network</span><span>相关 Values &amp; Behaviours</span><span>JD 证据对应的问题</span></div></div>
+      </section>
+    </section>
+    <section class="method"><span>METHOD &amp; LIMITS</span><h2>从 JD 原文到面试练习</h2><div><p><b>岗位分类</b>依据 UN Careers 的九个 Job Networks，以 JD 中的职责和专业词汇进行规则匹配。</p><p><b>CBI 框架</b>依据联合国新版 Values and Behaviours Framework：Inclusion、Integrity、Humility、Humanity 及五项行为。</p><p><b>重要限制</b>结果用于练习优先级，不代表机构一定会问这些题；边界判断请回到 JD 原文人工复核。</p></div></section>
+  </main>
+  <footer><p>本工具不生成虚构经历或“标准答案”。职位文本仅在当前浏览器中处理，不会保存或上传。</p><span>© 闪击 UN 求职实验室 · Interview Lab</span></footer>
+  <script src="./app.js"></script>
+</body>
+</html>
