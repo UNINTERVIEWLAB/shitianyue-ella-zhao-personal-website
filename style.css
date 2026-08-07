@@ -22,7 +22,7 @@ button,input,textarea{font:inherit}
 .hero-meta span:first-child{padding-left:0;border:0}
 .hero-meta b{font:25px Georgia,serif}
 .personal-hero{min-height:470px}
-.module-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;width:min(1240px,calc(100% - 48px));margin:-70px auto 90px;position:relative;z-index:2}
+.module-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;width:min(1120px,calc(100% - 48px));margin:-70px auto 90px;position:relative;z-index:2}
 .module-card{min-height:300px;padding:42px;color:var(--ink);background:#fff;border:1px solid var(--line);box-shadow:0 14px 50px #1c4a6517;text-decoration:none;transition:.2s}
 .module-card:hover{transform:translateY(-4px);box-shadow:0 20px 55px #1c4a6525}
 .module-card>span,.principles>span,.week-plan>span{color:var(--blue);font-size:9px;font-weight:800;letter-spacing:.18em}
@@ -36,6 +36,16 @@ button,input,textarea{font:inherit}
 .module-card.work-card .work-title{margin:3px 0 14px;color:var(--navy);font:500 19px/1.45 Georgia,serif}
 .module-card.work-card small{color:var(--muted);font-size:10px;letter-spacing:.08em;text-transform:uppercase}
 .module-card.work-card b{margin-top:auto;padding-top:28px}
+.module-card.life-card{display:flex;flex-direction:column;background:var(--sky);border-color:#b9d9e8}
+.module-card.life-card b{margin-top:auto;padding-top:28px}
+.blog-hero{min-height:430px}
+.blog-shell{width:min(980px,calc(100% - 48px));margin:-70px auto 90px;padding:42px;background:#fff;border:1px solid var(--line);box-shadow:0 14px 50px #1c4a6517;position:relative;z-index:2}
+.blog-shell>h2{margin:12px 0 28px;color:var(--navy);font:500 34px Georgia,"Songti SC",serif}
+.blog-entry{display:flex;justify-content:space-between;align-items:flex-end;gap:36px;padding:30px 0 8px;border-top:1px solid var(--line);color:var(--ink);text-decoration:none}
+.blog-entry span{color:var(--blue);font-size:9px;font-weight:800;letter-spacing:.13em}
+.blog-entry h3{max-width:740px;margin:12px 0;color:var(--navy);font:500 27px/1.35 Georgia,"Songti SC",serif}
+.blog-entry p{max-width:700px;margin:0;color:var(--muted);font-size:12px;line-height:1.8}
+.blog-entry>b{color:var(--blue);font-size:12px;white-space:nowrap}
 .principles{width:min(1050px,calc(100% - 48px));margin:0 auto 90px;padding:42px 0;border-top:1px solid var(--line)}
 .principles h2{font:500 34px Georgia,serif}
 .principles>div{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
@@ -157,6 +167,9 @@ footer p{margin:0}
 .star-note{align-items:flex-start}
 .star-note div{grid-template-columns:1fr}
 .star-note div b{grid-column:auto}
+.blog-shell{width:min(100% - 28px,680px);padding:26px 20px}
+.blog-entry{align-items:flex-start;flex-direction:column}
+.blog-entry h3{font-size:23px}
 }
 
 
