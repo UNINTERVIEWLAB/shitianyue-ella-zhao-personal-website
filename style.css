@@ -22,7 +22,7 @@ button,input,textarea{font:inherit}
 .hero-meta span:first-child{padding-left:0;border:0}
 .hero-meta b{font:25px Georgia,serif}
 .personal-hero{min-height:470px}
-.module-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;width:min(1120px,calc(100% - 48px));margin:-70px auto 90px;position:relative;z-index:2}
+.module-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;width:min(1240px,calc(100% - 48px));margin:-70px auto 90px;position:relative;z-index:2}
 .module-card{min-height:300px;padding:42px;color:var(--ink);background:#fff;border:1px solid var(--line);box-shadow:0 14px 50px #1c4a6517;text-decoration:none;transition:.2s}
 .module-card:hover{transform:translateY(-4px);box-shadow:0 20px 55px #1c4a6525}
 .module-card>span,.principles>span,.week-plan>span{color:var(--blue);font-size:9px;font-weight:800;letter-spacing:.18em}
@@ -32,6 +32,10 @@ button,input,textarea{font:inherit}
 .module-card.featured{color:#fff;background:var(--navy);border-color:var(--navy)}
 .module-card.featured p,.module-card.featured>span{color:#c5dce9}
 .module-card.featured b{color:#88d4f4}
+.module-card.work-card{display:flex;flex-direction:column;border-top:4px solid var(--blue)}
+.module-card.work-card .work-title{margin:3px 0 14px;color:var(--navy);font:500 19px/1.45 Georgia,serif}
+.module-card.work-card small{color:var(--muted);font-size:10px;letter-spacing:.08em;text-transform:uppercase}
+.module-card.work-card b{margin-top:auto;padding-top:28px}
 .principles{width:min(1050px,calc(100% - 48px));margin:0 auto 90px;padding:42px 0;border-top:1px solid var(--line)}
 .principles h2{font:500 34px Georgia,serif}
 .principles>div{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
